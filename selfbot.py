@@ -12,7 +12,7 @@ import textwrap
 import traceback
 
 default_data = {
-    "PREFIX": "r.",
+    "PREFIX": "-",
     "TOKEN": "your_token_here",
     }
 
@@ -78,8 +78,16 @@ async def on_ready():
     Username: {bot.user}
     User ID: {bot.user.id}
     ------------------------------------------"""))
-        await bot.change_presence(game=discord.Game(name="Minecraft", url="https://twitch.tv/Duaney", type=0))
-
+    bot.uptime = datetime.datetime.now()
+    print(textwrap.dedent(f"""
+    ------------------------------------------
+    Self-Bot Ready
+    Author: verix#7220
+    ------------------------------------------
+    Username: {bot.user}
+    User ID: {bot.user.id}
+    ------------------------------------------"""))
+    await bot.change_presence(game=discord.Game(name="Minecraft", url="https://twitch.tv/Duaney", type=0))
 
 
 @bot.command(pass_context=True)
