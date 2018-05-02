@@ -78,7 +78,8 @@ async def on_ready():
     Username: {bot.user}
     User ID: {bot.user.id}
     ------------------------------------------"""))
-    await bot.change_presence(status=discord.Status.invisible, afk=True)
+        await bot.change_presence(game=discord.Game(name="Minecraft", type=0))
+
 
 
 @bot.command(pass_context=True)
