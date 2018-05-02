@@ -87,7 +87,7 @@ async def on_ready():
     Username: {bot.user}
     User ID: {bot.user.id}
     ------------------------------------------"""))
-    await bot.change_presence(game=discord.Game(name="Minecraft", url="https://twitch.tv/Duaney", type=0))
+    await bot.change_presence(game=discord.Game(name="Minecraft", url="https://twitch.tv/Duaney", type=1))
 
 
 @bot.command(pass_context=True)
