@@ -1,4 +1,3 @@
-git+https://github.com/fourjr/discord.py@rewrite
 lxml
 mtranslate
 colorthief
