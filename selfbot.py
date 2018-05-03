@@ -87,7 +87,7 @@ async def on_ready():
     Username: {bot.user}
     User ID: {bot.user.id}
     ------------------------------------------"""))
-    await self.change_presence(status=discord.Status.idle, afk=True)
+    await self.change_presence(status=discord.Status.invisible, afk=True)
 
 
 @bot.command(pass_context=True)
